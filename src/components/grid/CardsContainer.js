@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 
-export default function Grid() {
+export default function CardsContainer() {
 	const [images, setImages] = useState(null);
 	// set initial state to api componentDidMount
 	useEffect(() => {

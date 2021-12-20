@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Grid from "./grid/Grid";
+import CardsContainer from "./grid/CardsContainer";
 import BestScore from "./score/BestScore";
 import CurrentScore from "./score/CurrentScore";
 
 export default function Main() {
 	const [currentScore, setCurrentScore] = useState(0);
 	const [bestScore, setBestScore] = useState(0);
-
+	const [selectedCards, setSelectedCards] = useState([]);
 	// update best score
 	useEffect(() => {
 		if (bestScore < currentScore) {
@@ -21,8 +21,16 @@ export default function Main() {
 		};
 	});
 
-	const handleClick = () => {
-		console.log("sth");
+	const handleClick = (e) => {
+		const id = e.target.closest(".card").id;
+		if (selectedCards.includes(id)) {
+			// game end
+			setCurrentScore(0);
+			setSelectedCards([]);
+		} else {
+			setSelectedCards((prevValues) => [...prevValues, id]);
+			setCurrentScore(currentScore + 1);
+		}
 	};
 
 	return (
@@ -32,7 +40,7 @@ export default function Main() {
 				<BestScore bestScore={bestScore} />
 			</div>
 			<div>
-				<Grid />
+				<CardsContainer />
 			</div>
 		</main>
 	);
