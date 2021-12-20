@@ -39,9 +39,7 @@ export default function Main() {
 				<CurrentScore currentScore={currentScore} />
 				<BestScore bestScore={bestScore} />
 			</div>
-			<div>
-				<CardsContainer />
-			</div>
+			<CardsContainer />
 		</main>
 	);
 }

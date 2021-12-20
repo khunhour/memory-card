@@ -9,14 +9,14 @@ export default function CardsContainer() {
 			const data = await fetch(
 				"https://thronesapi.com/api/v2/Characters"
 			).then((res) => res.json());
-			setImages(data.slice(0, 14));
+			setImages(data.slice(0, 15));
 		};
 		fetchedData();
 	}, []);
 
 	if (images) {
 		return (
-			<div>
+			<div className="cards-container">
 				{images.map((image) => {
 					return <Cards info={image} />;
 				})}
