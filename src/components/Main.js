@@ -14,11 +14,22 @@ export default function Main() {
 		}
 	}, [currentScore, bestScore]);
 
+	useEffect(() => {
+		document.addEventListener("click", handleClick);
+		return () => {
+			document.removeEventListener("click", handleClick);
+		};
+	});
+
+	const handleClick = () => {
+		console.log("sth");
+	};
+
 	return (
 		<main>
 			<div>
-				<CurrentScore />
-				<BestScore />
+				<CurrentScore currentScore={currentScore} />
+				<BestScore bestScore={bestScore} />
 			</div>
 			<div>
 				<Grid />
