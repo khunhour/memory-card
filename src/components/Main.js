@@ -4,6 +4,8 @@ import BestScore from "./score/BestScore";
 import CurrentScore from "./score/CurrentScore";
 
 export default function Main() {
+	const [currentScore, useCurrentScore] = useState(0);
+	const [bestScore, useBestScore] = useState(0);
 	return (
 		<main>
 			<div>
