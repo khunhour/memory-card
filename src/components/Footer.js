@@ -4,7 +4,7 @@ export default function Footer() {
 	return (
 		<footer>
 			<span>2021 &copy; khunhour</span>
-			<a href="https://github.com/khunhour/cv-project">
+			<a href="https://github.com/khunhour/memory-card">
 				<img src={githubPic} alt="github" />
 			</a>
 		</footer>
