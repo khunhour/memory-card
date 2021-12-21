@@ -28,6 +28,7 @@ export default function Main() {
 		}
 	}, [currentScore, bestScore]);
 
+	//subscribe and unsubscribe to event listener
 	useEffect(() => {
 		document.addEventListener("click", handleClick);
 		return () => {
@@ -57,7 +58,10 @@ export default function Main() {
 	return (
 		<main>
 			<div className="instruction">
-				Get points by clicking on GOT characters no more than once!{" "}
+				<div>
+					Get points by clicking on the characters no more than once.
+				</div>
+				<div>valar morghulis!</div>
 			</div>
 			<div className="scoreboard">
 				<CurrentScore currentScore={currentScore} />
