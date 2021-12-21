@@ -5,6 +5,7 @@ function shuffleArray(array) {
 		array[i] = array[randomIndex];
 		array[randomIndex] = temp;
 	}
+	return array;
 }
 
 export default shuffleArray;
