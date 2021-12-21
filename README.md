@@ -2,6 +2,7 @@
 
 -   This is a Memory Card Game
 -   A project of The Odin Project
+-   build using `create-react-app`
 -   Live Preview: https://khunhour.github.io/memory-card/
 
 # How to Play
