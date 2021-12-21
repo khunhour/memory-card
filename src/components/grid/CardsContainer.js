@@ -7,7 +7,7 @@ export default function CardsContainer({ people }) {
 		return (
 			<div className="cards-container">
 				{people.map((person) => {
-					return <Cards info={person} key={person.id} />;
+					return <Cards person={person} key={person.id} />;
 				})}
 			</div>
 		);
