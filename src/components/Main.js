@@ -56,7 +56,7 @@ export default function Main() {
 	}
 	return (
 		<main>
-			<div>
+			<div className="instruction">
 				Get points by clicking on GOT characters no more than once!{" "}
 			</div>
 			<div className="scoreboard">

@@ -16,11 +16,9 @@ header {
 	font-size: 1.2rem;
 }
 
-img {
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-	border-radius: 5px;
+.scoreboard {
+	text-align: center;
+	margin: 1rem 0px;
 }
 main {
 	display: flex;
@@ -43,6 +41,12 @@ main {
 	padding: 0.5rem;
 	border-radius: 5px;
 	background-color: #243449b0;
+}
+img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 5px;
 }
 /* .cards-container {
 	display: grid;
