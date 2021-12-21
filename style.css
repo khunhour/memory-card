@@ -1,0 +1,107 @@
+:root {
+	font-size: 17px;
+	color: white;
+	font-family: "Cinzel", serif;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url("./GOTbackground.jpg") no-repeat #243449;
+	background-size: cover;
+}
+.page {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.scoreboard {
+	text-align: center;
+	margin: 1rem 0px;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+.instruction {
+	text-align: center;
+}
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(5, 11rem);
+	flex-wrap: wrap;
+	gap: 0.8rem;
+}
+.card {
+	font-weight: bold;
+	width: 9.5rem;
+	height: 12rem;
+	border: solid 2px #59708d;
+	text-align: center;
+	padding: 0.5rem;
+	border-radius: 5px;
+	background-color: #243449b0;
+}
+.card:hover {
+	cursor: pointer;
+	transform: scale(1.03);
+	background-color: #253953;
+	transition: all 200ms ease-in-out;
+}
+
+img {
+	width: 9rem;
+	height: 9rem;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	padding: 0.3rem;
+	background-color: #0c1c30a9;
+}
+
+footer img {
+	width: 1rem;
+	height: 1rem;
+	margin: 0 5px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	border: solid white 1px;
+}
+@media (max-width: 1000px) {
+	.cards-container {
+		grid-template-columns: repeat(3, 11rem);
+	}
+}
+
+@media (max-width: 500px) {
+	:root {
+		font-size: 14px;
+	}
+	.cards-container {
+		gap: 5px;
+		grid-template-columns: repeat(3, 8rem);
+	}
+	.card {
+		width: 6.5rem;
+		height: 9.5rem;
+	}
+	img {
+		width: 6.5rem;
+		height: 6.5rem;
+	}
+}
