@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CardsContainer from "./grid/CardsContainer";
-import BestScore from "./score/BestScore";
-import CurrentScore from "./score/CurrentScore";
+import BestScore from "./scoreboard/BestScore";
+import CurrentScore from "./scoreboard/CurrentScore";
 import shuffleArray from "./helperFunction/shuffleArray";
 
 export default function Main() {
@@ -57,6 +57,9 @@ export default function Main() {
 	return (
 		<main>
 			<div>
+				Get points by clicking on GOT characters no more than once!{" "}
+			</div>
+			<div className="scoreboard">
 				<CurrentScore currentScore={currentScore} />
 				<BestScore bestScore={bestScore} />
 			</div>
