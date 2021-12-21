@@ -12,6 +12,11 @@ body {
 	background: url("./images/GOTbackground.jpg") no-repeat #243449;
 	background-size: cover;
 }
+.page {
+	display: flex;
+	flex-direction: column;
+}
+
 header {
 	text-align: center;
 	font-size: 1.2rem;
@@ -26,6 +31,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	flex: 1;
 }
 .instruction {
 	text-align: center;
@@ -54,13 +60,38 @@ main {
 }
 
 img {
-	width: 150px;
-	height: 150px;
+	width: 9rem;
+	height: 9rem;
 	object-fit: cover;
 	border-radius: 5px;
 }
-/* .cards-container {
-	display: grid;
-	grid-template-columns: repeat(3, 180px);
-	grid-template-columns: repeat(3, 220px);
-} */
+
+footer {
+	margin-top: auto;
+	padding-top: 1rem;
+	text-align: center;
+}
+
+@media (max-width: 1000px) {
+	.cards-container {
+		grid-template-columns: repeat(3, 11rem);
+	}
+}
+
+@media (max-width: 500px) {
+	:root {
+		font-size: 14px;
+	}
+	.cards-container {
+		gap: 5px;
+		grid-template-columns: repeat(3, 8rem);
+	}
+	.card {
+		width: 6.5rem;
+		height: 9.5rem;
+	}
+	img {
+		width: 6.5rem;
+		height: 6.5rem;
+	}
+}
