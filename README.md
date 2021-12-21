@@ -1,6 +1,7 @@
 # About
 
 -   This is a Memory Card Game
+-   A project of The Odin Project
 -   Live Preview: https://khunhour.github.io/memory-card/
 
 # How to Play
