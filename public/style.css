@@ -3,8 +3,17 @@
 	color: white;
 	font-family: "Cinzel", serif;
 }
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
 body {
 	background-image: url("./images/GOTbackground.jpg");
+}
+header {
+	text-align: center;
+	font-size: 1.2rem;
 }
 
 img {
@@ -33,7 +42,7 @@ main {
 	text-align: center;
 	padding: 0.5rem;
 	border-radius: 5px;
-	background-color: #2434499d;
+	background-color: #243449b0;
 }
 /* .cards-container {
 	display: grid;
