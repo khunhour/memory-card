@@ -15,3 +15,7 @@
 -   HTML5
 -   CSS3
 -   JavaScript (ReactJS with Hooks)
+
+# Future Fixes
+
+-   add Gameonver feature
